@@ -449,7 +449,7 @@ class FlxAnimate extends FlxSprite
 				if (!limbOnScreen(limb, matrix, camera))
 					return;
 			}
-			camera.drawPixels(limb, null, matrix, colorTransform, blend, antialiasing);
+			camera.drawPixels(limb, null, matrix, colorTransform, blend, antialiasing, this.shader);
 		}
 
 		#if FLX_DEBUG
